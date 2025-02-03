@@ -2,27 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"  content="width=device-width, initial-scale=1">
     <title>My Cool HTML Program!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>2024 Coolest People</h1>
-    <p>This is a list of the coolest people in 2024 selected completely fairly and democratically</p>
+    <div class="alert alert-warning">
+        <strong>WARNING!</strong> Entering the Cool Zone 😎<div class="spinner-grow text-danger"></div>
+    </div>
+    
+    <div class="progress">
+        <div class="progress-bar bg-danger" style="width:15%"> Your cool level 🙄</div>
+    </div>
 
-    <h2><a href="https://www.linkedin.com/in/andy-harbert-7865083/ms?trk=org-employees">1. Mr.Harbert</a></h2>
-    <h2>2. Max Gwartney</h2>
-    <img src = "img\Max.JPG" alt="Picture Max Gwartney" height="240" width="240">
-    <h2>3. Jack Black</h2>
-    <h2>4. Mr.Wooden</h2>
-    <h2><a href="https://www.youtube.com/c/Grudgieson/featured">5. This Guy</a></h2>
-    <img src="img\Grudgieson.png" alt="Squirre Guy" height="240" width="240">
+    <div class="btn-group">
+        <button type="button" class="btn btn-success">Cool Website</button>
+        <button type="button" class="btn btn-warning">Meh Website</button>
+        <button type="button" class="btn btn-danger">Not Cool Website</button>
+    </div>
 
-    <em>
+    <div class="container p-5 bg-dark text-white">
+        <h1>2024 Coolest People <span class="badge text-bg-light">Bootstrap Edition 🤯</span></h1>
+        <p>This is a list of the coolest people in 2024 <mark>selected completely fairly and democratically</mark></p>
+    </div>
+
+    <button type="button" class="btn btn-outline-primary"> COOL BUTTON (Press for +1 cool)</button>
+
+    <div class="row">
+        <div class="col-lg-1"> <button type="button" class="btn btn-info">Spot</button></div>
+        <div class="col-lg-1">1</div>
+        <div class="col-lg-1">2</div>
+        <div class="col-lg-1">3</div>
+        <div class="col-lg-1">4</div>
+        <div class="col-lg-1">5</div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1"> <button type="button" class="btn btn-info">Names</button></div>
+        <div class="col-lg-1">Mr.Harbert</div>
+        <div class="col-lg-1">Max Gwartney</div>
+        <div class="col-lg-1">Jack Black</div>
+        <div class="col-lg-1">Mr.Wooden</div>
+        <div class="col-lg-1">This Guy</div>
+    </div>
+
+    <button type="button" class="btn btn-primary active">COOL</button>
+    <button type="button" class="btn btn-primary" disabled>NOT COOL</button>
+
+    <div class="bg-danger p-3"><h2><a href="https://www.linkedin.com/in/andy-harbert-7865083/ms?trk=org-employees">1. Mr.Harbert <span class="badge text-bg-primary"> BEST of 2024</span></a></h2></div>
+    <div class="bg-warning p-3"><h2>2. Max Gwartney</h2>
+        <img src = "img\Max.JPG" class="rounded-circle" alt="Picture Max Gwartney" height="240" width="240"></div>
+        <div class="text-bg-success p-3"><h2>3. Jack Black</h2></div>
+        <div class="text-bg-primary p-3"><h2>4. Mr.Wooden</h2>
+        <img src = "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1pZLWb.img?w=768&h=432&m=6&x=840&y=248&s=276&d=276" class="rounded" alt="Picture a tragedy" height="120" width="720"></div>
+        <div class="text-bg-dark p-3"><h2><a href="https://www.youtube.com/c/Grudgieson/featured">5. This Guy (There was no purple background)</a></h2>
+        <img src="img\Grudgieson.png" class="img-thumbnail" alt="Squirre Guy" height="240" width="240"></div>
+
+    <em class="h3">
         This list is perfect and anyone else who has other opinion should watch
         out for the hitman that is on the way. 
     </em>
 
-    <strong>Thank you :)</strong>
+    <strong class="display-1">Thank you :)</strong>
+
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading... (But you aren't cool enough to see what will load 😂)
+      </button>
 
     <h2>Coolest People As a Table</h2>
 
@@ -53,6 +100,10 @@
             <td>This Guy</td>
         </tr>
     </table>
+
+    <div class="progress" style="height:25px">
+        <div class="progress-bar" style="width:40%;"> Loading more cool <div class="spinner-border spinner-border-sm text-light"></div></div>
+      </div> 
 
     
 </body>
